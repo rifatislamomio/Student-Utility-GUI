@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.userController">
+   <children>
+      <ImageView fitHeight="233.0" fitWidth="435.0">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="154.0" layoutY="169.0">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="362.0" layoutY="38.0" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="Edit" textFill="#222121" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="38.0" onAction="#close" onDragEntered="#close" style="-fx-background-color: ffff; -fx-background-radius: 10;" text="Close" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="313.0" prefHeight="45.0" prefWidth="162.0" text="Jane s. Doe" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
