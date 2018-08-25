@@ -11,19 +11,19 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Main extends Application {
+public class testFrame extends Application {
 
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("userProfile.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("testFrame.fxml"));
 
         AnchorPane pane = loader.load();
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Profile");
-        primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("user.png")));
+        primaryStage.setTitle("Tester");
+
         primaryStage.setAlwaysOnTop(true);
 
         primaryStage.show();

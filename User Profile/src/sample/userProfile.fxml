@@ -21,7 +21,7 @@
       </ImageView>
       <JFXButton layoutX="351.0" layoutY="38.0" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="Update" textFill="#222121" />
       <JFXButton layoutX="14.0" layoutY="38.0" onAction="#close" onDragEntered="#close" style="-fx-background-color: ffff; -fx-background-radius: 10;" text="Close" />
-      <Label alignment="CENTER" layoutX="119.0" layoutY="313.0" prefHeight="45.0" prefWidth="199.0" text="Jane s. Doe" textAlignment="CENTER" textFill="#401579">
+      <Label fx:id="name" alignment="CENTER" layoutX="119.0" layoutY="313.0" prefHeight="45.0" prefWidth="199.0" text="Jane s. Doe" textAlignment="CENTER" textFill="#401579">
          <font>
             <Font name="Segoe UI Semibold" size="23.0" />
          </font></Label>
@@ -40,17 +40,17 @@
             <Font name="Segoe UI Semibold" size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="191.0" layoutY="379.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="JDoe" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="uName" alignment="CENTER" layoutX="191.0" layoutY="379.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="JDoe" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Semibold" size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="191.0" layoutY="437.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text=" 1731536042" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="id" alignment="CENTER" layoutX="191.0" layoutY="437.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text=" 1731536042" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Semibold" size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="191.0" layoutY="492.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text=" jdoe@gmail.com" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="email" alignment="CENTER" layoutX="191.0" layoutY="492.0" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text=" jdoe@gmail.com" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Semibold" size="15.0" />
          </font>
