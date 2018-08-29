@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -14,10 +15,10 @@ public class testFrameController {
     @FXML
     private JFXTextField testID;
 
-    public void show(ActionEvent e)
-    {
+    public void show(ActionEvent e) {
         idGetter.setID(testID.getText());
         showProfile.show();
     }
-
 }
+
+

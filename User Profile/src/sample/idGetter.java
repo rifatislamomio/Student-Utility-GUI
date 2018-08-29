@@ -2,6 +2,13 @@ package sample;
 
 public class idGetter {
     public static String id;
+    public static String usrName;
+    public static String usrMail;
+    public static String usrPass;
+    public static String usrname;
+
+
+
 
     public idGetter(String id)
     {
@@ -17,5 +24,38 @@ public class idGetter {
     {
         return id;
     }
+
+    public static String getUserName() {
+        return usrName;
+    }
+
+    public static void setUserName(String usrName) {
+        idGetter.usrName = usrName;
+    }
+
+    public static String getUserMail() {
+        return usrMail;
+    }
+
+    public static void setUserMail(String usrMail) {
+        idGetter.usrMail = usrMail;
+    }
+
+    public static String getUserPass() {
+        return usrPass;
+    }
+
+    public static void setUserPass(String usrPass) {
+        idGetter.usrPass = usrPass;
+    }
+
+    public static String getUsername() {
+        return usrname;
+    }
+
+    public static void setUsername(String usrFname) {
+        idGetter.usrname = usrFname;
+    }
+
 
 }

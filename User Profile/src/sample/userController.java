@@ -21,8 +21,14 @@ public class userController implements Initializable {
 
     public void close(ActionEvent e)
     {
-        Platform.exit();
+        showProfile.primaryStage.close();
     }
+
+    public void Update(ActionEvent ee)
+    {
+        userUpdate.show();
+    }
+
 
     @FXML
     private  Label name;
@@ -52,6 +58,7 @@ public class userController implements Initializable {
             usrname = (resultSet.getString("UserName"));
              ID = (resultSet.getString("ID"));
             eml =(resultSet.getString("Email"));
+            idGetter.setUserPass(resultSet.getString("Pass"));
 
         }
         catch (Exception e)
@@ -59,10 +66,17 @@ public class userController implements Initializable {
             System.out.println(e);
         }
 
+        idGetter.setUsername(nm);
+        idGetter.setUserMail(eml);
+        idGetter.setUsername(usrname);
+
         name.setText(nm);
         uName.setText(usrname);
         id.setText(ID);
         email.setText(eml);
-
     }
+
+
+
+
 }

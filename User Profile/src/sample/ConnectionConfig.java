@@ -11,7 +11,8 @@ public class ConnectionConfig {
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12252919","sql12252919","CaB9mHENr1");
+
+        connection = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12253963","sql12253963","UYLkv77fze");
 
         } catch(Exception e)
         {

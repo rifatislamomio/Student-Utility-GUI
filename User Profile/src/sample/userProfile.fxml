@@ -19,8 +19,8 @@
             <Image url="@user.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="351.0" layoutY="38.0" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="Update" textFill="#222121" />
-      <JFXButton layoutX="14.0" layoutY="38.0" onAction="#close" onDragEntered="#close" style="-fx-background-color: ffff; -fx-background-radius: 10;" text="Close" />
+      <JFXButton layoutX="14.0" layoutY="23.0" onAction="#Update" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="Update" textFill="#222121" />
+      <JFXButton layoutX="365.0" layoutY="23.0" onAction="#close" onDragEntered="#close" style="-fx-background-color: ffff; -fx-background-radius: 10;" text="Close" />
       <Label fx:id="name" alignment="CENTER" layoutX="119.0" layoutY="313.0" prefHeight="45.0" prefWidth="199.0" text="Jane s. Doe" textAlignment="CENTER" textFill="#401579">
          <font>
             <Font name="Segoe UI Semibold" size="23.0" />
