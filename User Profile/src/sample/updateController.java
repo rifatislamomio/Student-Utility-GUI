@@ -55,6 +55,7 @@ public class updateController implements Initializable {
             Connection connection = ConnectionConfig.getConnection();
             Statement myst = connection.createStatement();
             myst.executeUpdate("UPDATE userdetails SET Email='"+nEmail.getText() +"' where userdetails.ID = "+idGetter.getID());
+            successEmailBox.showBox();
 
         }
         catch (Exception abc)
@@ -74,15 +75,16 @@ public class updateController implements Initializable {
                 Connection connection = ConnectionConfig.getConnection();
                 Statement myst = connection.createStatement();
                 myst.executeUpdate("UPDATE userdetails SET Pass='" + nPass.getText() + "' where userdetails.ID = " + idGetter.getID());
-
+                successPassMatchBox.showBox();
 
             } catch (Exception abc) {
                 System.out.println(abc);
             }
         }
+        else
+        {
+            errorPassMatchBox.showBox();
+        }
     }
-
-
-
 
 }
