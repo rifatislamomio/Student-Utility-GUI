@@ -29,6 +29,8 @@ public class userController implements Initializable {
         userUpdate.show();
     }
 
+    @FXML
+    private Label department;
 
     @FXML
     private  Label name;
@@ -43,12 +45,13 @@ public class userController implements Initializable {
     private Label email;
 
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         String sqlID = idGetter.getID();
 
-        String nm="null",ID="null",usrname="null",eml="null";
+        String nm="null",ID="null",usrname="null",eml="null",dept="null";
         try {
             Connection connection = ConnectionConfig.getConnection();
             Statement myst = connection.createStatement();
@@ -70,10 +73,13 @@ public class userController implements Initializable {
         idGetter.setUserMail(eml);
         idGetter.setUsername(usrname);
 
+
         name.setText(nm);
         uName.setText(usrname);
         id.setText(ID);
         email.setText(eml);
+        department.setText(idGetter.getDept(ID+"")+"");
+
     }
 
 

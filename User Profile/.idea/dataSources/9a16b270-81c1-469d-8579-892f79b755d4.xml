@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="sql12252919@sql12.freemysqlhosting.net">
+<dataSource name="sql12253963@sql12.freemysqlhosting.net">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.10">
     <root id="1">
       <ServerVersion>5.5.58</ServerVersion>
@@ -10,7 +10,7 @@
     <schema id="2" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="sql12252919">
+    <schema id="3" parent="1" name="sql12253963">
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
@@ -804,33 +804,29 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="201" parent="3" name="userdetails"/>
-    <column id="202" parent="201" name="ID">
+    <column id="202" parent="201" name="FirstName">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>tinytext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="203" parent="201" name="FirstName">
+    <column id="203" parent="201" name="LastName">
       <Position>2</Position>
       <DataType>tinytext|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="204" parent="201" name="LastName">
+    <column id="204" parent="201" name="UserName">
       <Position>3</Position>
       <DataType>tinytext|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="205" parent="201" name="UserName">
+    <column id="205" parent="201" name="Email">
       <Position>4</Position>
       <DataType>tinytext|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="206" parent="201" name="Email">
+    <column id="206" parent="201" name="ID">
       <Position>5</Position>
-      <DataType>tinytext|0s</DataType>
+      <DataType>int(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -840,19 +836,15 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="208" parent="201" name="UserName">
-      <ColNames>UserName</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
+    <column id="208" parent="201" name="Department">
+      <Position>7</Position>
+      <DataType>tinytext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
     <key id="209" parent="201" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
-    </key>
-    <key id="210" parent="201" name="UserName">
-      <ColNames>UserName</ColNames>
-      <UnderlyingIndexName>UserName</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

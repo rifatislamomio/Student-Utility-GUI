@@ -34,6 +34,7 @@ public class Controller implements Initializable {
             stg.setTitle("About");
             stg.setScene(new Scene(pane));
             stg.setResizable(true);
+            stg.setAlwaysOnTop(true);
             stg.initModality(Modality.APPLICATION_MODAL);
             stg.show();
         }
@@ -44,7 +45,6 @@ public class Controller implements Initializable {
 
 
     }
-
 
 
     @FXML
@@ -80,8 +80,8 @@ public class Controller implements Initializable {
                 Statement uDet = connection.createStatement();
 
                 String sql = "INSERT into userdetails" +
-                        "(FirstName, LastName, UserName, Email, ID, Pass)"+
-                        "values('"+fName.getText()+"','"+lName.getText()+"','"+uName.getText()+"','"+email.getText()+"','"+sID.getText()+"','"+pass.getText()+"')";
+                        "(FirstName, LastName, UserName, Email, ID, Pass,Department)"+
+                        "values('"+fName.getText()+"','"+lName.getText()+"','"+uName.getText()+"','"+email.getText()+"','"+sID.getText()+"','"+pass.getText()+"','"+idGetter.getDept(sID.getText())+"')";
 
 
                 uDet.executeUpdate(sql);
@@ -95,13 +95,7 @@ public class Controller implements Initializable {
             System.out.println(e);
         }
 
-
-
     }
-
-
-
-
 
 
 

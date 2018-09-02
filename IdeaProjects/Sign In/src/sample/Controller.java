@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.validation.RequiredFieldValidator;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,6 +12,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -20,24 +25,46 @@ public class Controller implements Initializable {
 
     @FXML
     private JFXPasswordField pass;
-    @FXML
-    private JFXButton btn;
+
+
+
+    private PreparedStatement preparedStatement;
+
 
     public void getStarted(ActionEvent acc)
     {
-        if(username.getText().equals("omio") && pass.getText().equals("qwe"))
-        {
-            System.out.println("Login In");
-            btn.setText("Login In");
-            btn.setDisable(true);
-        }
-        else
-        {
-            System.out.println("Wrong Password");
 
-            AlertBox.showBox();
+        try{
+            Connection con = ConnectionConfig.getConnection();
+
+             String sql = "SELECT *FROM userdetails WHERE " +
+                "UserName='"+username.getText()+"' AND Pass = '"+pass.getText()+"'";
+
+            ResultSet resultSet =  con.prepareStatement(sql).executeQuery();
+
+            if(resultSet.next())
+            {
+                System.out.println("Success!");
+            }
+            else
+            {
+                errorPass.showBox();
+            }
+
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
         }
 
+
+
+    }
+
+    public void close(ActionEvent acc)
+    {
+
+        Platform.exit();
 
     }
 

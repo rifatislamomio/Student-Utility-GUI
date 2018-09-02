@@ -34,7 +34,7 @@ public class Main extends Application {
             Scene scene = new Scene(pane);
             scene.getStylesheets().addAll(Main.class.getResource("style.css").toExternalForm());
             stage.initStyle(StageStyle.UNDECORATED);
-
+            stage.setAlwaysOnTop(true);
 
 
             stage.setResizable(false);

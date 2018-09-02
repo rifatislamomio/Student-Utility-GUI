@@ -26,17 +26,17 @@
             <font>
                 <Font name="Segoe UI Semibold" size="23.0" />
             </font></Label>
-        <Label alignment="CENTER" layoutX="60.0" layoutY="481.0" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="New Password" textAlignment="CENTER" textFill="WHITE">
+        <Label alignment="CENTER" layoutX="54.0" layoutY="481.0" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="New Password" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Segoe UI Semibold" size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="60.0" layoutY="536.0" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="Verify Password" textAlignment="CENTER" textFill="WHITE">
+        <Label alignment="CENTER" layoutX="54.0" layoutY="536.0" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="Verify Password" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Segoe UI Semibold" size="15.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" layoutX="60.0" layoutY="323.0" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="New Email" textAlignment="CENTER" textFill="WHITE">
+        <Label alignment="CENTER" layoutX="54.0" layoutY="323.0" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #921fc6; -fx-background-radius: 10;" text="New Email" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Segoe UI Semibold" size="15.0" />
             </font>
