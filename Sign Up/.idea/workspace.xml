@@ -91,9 +91,9 @@
     <session id="-1411690383">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
@@ -113,21 +113,21 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
           <entry key="fxml" value="26" />
-          <entry key="java" value="1490" />
+          <entry key="java" value="1497" />
           <entry key="sql" value="5" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1490" />
+          <entry key="JAVA" value="1497" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Scratch" value="5" />
           <entry key="XML" value="26" />
@@ -137,18 +137,18 @@
         <counts>
           <entry key="MF" value="1" />
           <entry key="fxml" value="19" />
-          <entry key="java" value="41" />
+          <entry key="java" value="42" />
           <entry key="jpg" value="4" />
           <entry key="png" value="4" />
           <entry key="sql" value="10" />
-          <entry key="userdetails" value="19" />
+          <entry key="userdetails" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="19" />
+          <entry key="Database Element" value="21" />
           <entry key="Image" value="8" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="42" />
           <entry key="Manifest" value="1" />
           <entry key="Scratch" value="10" />
           <entry key="XML" value="19" />
@@ -162,10 +162,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/idGetter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="534">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -214,8 +214,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6f50fd8c-1bfb-4f5f-b41b-87b5d88f45dd/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/About.java" />
-        <option value="$PROJECT_DIR$/src/sample/idGetter.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/idGetter.java" />
       </list>
     </option>
   </component>
@@ -233,7 +233,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="162" />
+    <option name="x" value="160" />
     <option name="y" value="70" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
@@ -246,8 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,6 +269,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,17 +436,18 @@
       <workItem from="1535805867155" duration="2319000" />
       <workItem from="1535812096053" duration="59000" />
       <workItem from="1535864114242" duration="145000" />
+      <workItem from="1535952314865" duration="298000" />
+      <workItem from="1536038099189" duration="228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30866000" />
+    <option name="totallyTimeSpent" value="31392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17114094" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17516778" />
       <window_info id="Structure" order="1" weight="0.24895689" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -474,7 +475,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.21677852" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.21677852" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -612,20 +613,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/idGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/if_icon-55-document-text_314895.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
+        <state relative-caret-position="180">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b2261367-0f65-47be-b05d-631fcc2babbe/schema/sql12253963/table/userdetails" />
+    <entry file="file://$PROJECT_DIR$/src/sample/idGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b2261367-0f65-47be-b05d-631fcc2babbe/schema/sql12253963/table/userdetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

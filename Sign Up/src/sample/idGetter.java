@@ -70,6 +70,11 @@ public class idGetter {
             return "BBA";
         }
 
+        else if(id.charAt(id.length()-2)=='4' && id.charAt(id.length()-1)=='3')
+        {
+            return "EEE";
+        }
+
         return "Not Specefied";
     }
 
