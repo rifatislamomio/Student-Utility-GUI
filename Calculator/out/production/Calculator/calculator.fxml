@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="342.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="342.0">
+         <image>
+            <Image url="@bgCal.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="38.0" prefHeight="71.0" prefWidth="309.0" style="-fx-background-color: white;" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn7" buttonType="RAISED" layoutX="17.0" layoutY="209.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="7" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn8" buttonType="RAISED" layoutX="96.0" layoutY="209.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="8" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn9" buttonType="RAISED" layoutX="176.0" layoutY="209.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="9" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn4" buttonType="RAISED" layoutX="17.0" layoutY="288.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="4" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn5" buttonType="RAISED" layoutX="96.0" layoutY="288.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="5" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn6" buttonType="RAISED" layoutX="176.0" layoutY="288.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="6" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="17.0" layoutY="368.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="1" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn2" buttonType="RAISED" layoutX="96.0" layoutY="368.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="2" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn3" buttonType="RAISED" layoutX="176.0" layoutY="368.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="3" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn0" buttonType="RAISED" layoutX="17.0" layoutY="448.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="0" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDot" buttonType="RAISED" layoutX="96.0" layoutY="448.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="." textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnEqual" buttonType="RAISED" layoutX="176.0" layoutY="448.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="=" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDevide" buttonType="RAISED" layoutX="256.0" layoutY="209.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="÷" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMultiply" buttonType="RAISED" layoutX="256.0" layoutY="288.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="x" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMinus" buttonType="RAISED" layoutX="256.0" layoutY="368.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="-" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPlus" buttonType="RAISED" layoutX="256.0" layoutY="448.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="+" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutX="17.0" layoutY="129.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="←" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCear" buttonType="RAISED" layoutX="96.0" layoutY="129.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="C" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRoot" buttonType="RAISED" layoutX="176.0" layoutY="129.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="√" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSqure" buttonType="RAISED" layoutX="256.0" layoutY="129.0" onAction="#onButtonClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #ee0f4e; -fx-background-radius: 15;" text="x²" textFill="#0d0628">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="315.0" layoutY="-1.0" onAction="#exit" text="x" textFill="#0d0628" />
+   </children>
+</AnchorPane>
