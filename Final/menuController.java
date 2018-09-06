@@ -57,6 +57,7 @@ public class menuController {
 
     public void messenger(ActionEvent e)
     {
+        showMessenger.show();
 
     }
 

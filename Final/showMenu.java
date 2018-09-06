@@ -16,7 +16,9 @@ public class showMenu {
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("menuController.fxml"));
             AnchorPane pane  = loader.load();
             Scene scene = new Scene(pane);
-            primaryStage.initStyle(StageStyle.UNDECORATED);
+            try {
+                primaryStage.initStyle(StageStyle.UNDECORATED);
+            }catch (Exception e){}
             primaryStage.setTitle("Menu");
             primaryStage.setAlwaysOnTop(true);
             primaryStage.setScene(scene);

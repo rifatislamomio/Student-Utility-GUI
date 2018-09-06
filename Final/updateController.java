@@ -70,7 +70,7 @@ public class updateController implements Initializable {
             try {
                 Connection connection = ConnectionConfig.getConnection();
                 Statement myst = connection.createStatement();
-                myst.executeUpdate("UPDATE users SET password='" + nPass.getText() + "' where usersusers.id = "+idGetter.getID());
+                myst.executeUpdate("UPDATE users SET password='" + nPass.getText() + "' where users.id = "+idGetter.getID());
                 successPassMatchBox.showBox();
 
             } catch (Exception abc) {

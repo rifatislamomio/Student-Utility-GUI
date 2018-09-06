@@ -5,6 +5,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
+import java.io.DataInputStream;
+import java.io.DataOutput;
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -39,9 +43,13 @@ public class signINController implements Initializable {
             if(resultSet.next())
             {
                 idGetter.setID(username.getText());
+                showMessenger.userName = resultSet.getString("username");
+                showMessenger.usernumber = resultSet.getInt("usernumber");
                 showMenu.show();
                 showSignIN.stage.close();
                 System.out.println("Success!");
+
+                DataOutputStream open = new DataOutputStream(new FileOutputStream("AllFriends.dat"));
             }
             else
             {
