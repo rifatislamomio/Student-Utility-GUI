@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menuController">
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="709.0" layoutX="-10.0">
+         <image>
+            <Image url="@323518-P9MHS8-840.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.08" />
+         </effect>
+      </ImageView>
+      <Button layoutX="449.0" layoutY="134.0" mnemonicParsing="false" onAction="#messenger">
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="60.0" preserveRatio="true">
+               <image>
+                  <Image url="@online-chat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="164.0" layoutY="286.0" mnemonicParsing="false" onAction="#note" onDragDetected="#note">
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="61.0" preserveRatio="true">
+               <image>
+                  <Image url="@notepad.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#about">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" preserveRatio="true">
+               <image>
+                  <Image url="@question.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="304.0" layoutY="287.0" mnemonicParsing="false" onAction="#timer" prefHeight="70.0" prefWidth="81.0">
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="58.0" preserveRatio="true">
+               <image>
+                  <Image url="@stopwatch.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="305.0" layoutY="134.0" mnemonicParsing="false" onAction="#userInfo">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="60.0" preserveRatio="true">
+               <image>
+                  <Image url="@userMenu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="165.0" layoutY="135.0" mnemonicParsing="false" onAction="#home">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="66.0" preserveRatio="true">
+               <image>
+                  <Image url="@house.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="637.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="28.0" preserveRatio="true">
+               <image>
+                  <Image url="@exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="449.0" layoutY="287.0" mnemonicParsing="false" onAction="#calculator">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="63.0" preserveRatio="true">
+               <image>
+                  <Image url="@calculation.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
