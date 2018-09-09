@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartPoint">
+   <children>
+      <ImageView fx:id="background" fitHeight="359.0" fitWidth="547.0" layoutX="-6.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@bgmessenger.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="overfindothers" fitHeight="142.0" fitWidth="143.0" layoutX="330.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recruitment.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="78.0" layoutY="73.0">
+         <image>
+            <Image url="@chat.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="chatButton" layoutX="89.0" layoutY="256.0" onAction="#chatButtonPressed" prefHeight="43.0" prefWidth="107.0" style="-fx-background-color: #dad7d7; -fx-background-radius: 8;" text="Chat" textFill="#171717">
+         <font>
+            <Font name="Segoe UI Symbol" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="getHelpButton" layoutX="347.0" layoutY="256.0" onAction="#getHelpButtonPressed" prefHeight="43.0" prefWidth="107.0" style="-fx-background-color: #dad7d7; -fx-background-radius: 8;" text="Find Others" textFill="#171717">
+         <font>
+            <Font name="Segoe UI Symbol" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

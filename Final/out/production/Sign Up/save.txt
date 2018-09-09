@@ -1,0 +1,21 @@
+@FXML
+    public void update(ActionEvent event) {
+
+        try {
+            Connection connection = ConnectionConfig.getConnection();
+            Statement myst = connection.createStatement();
+            ResultSet resultSet = myst.executeQuery("SELECT *from userdetails where userdetails.ID = 1731536042");
+            resultSet.next();
+
+            name.setText(resultSet.getString("FirstName")+" "+resultSet.getString("LastName"));
+            uName.setText(resultSet.getString("UserName"));
+            id.setText(resultSet.getString("ID"));
+            email.setText(resultSet.getString("Email"));
+
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+
+    }
