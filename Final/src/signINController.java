@@ -62,8 +62,6 @@ public class signINController implements Initializable {
             System.out.println(e);
         }
 
-
-
     }
 
     public void close(ActionEvent acc)
