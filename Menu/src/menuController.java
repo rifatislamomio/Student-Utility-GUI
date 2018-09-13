@@ -1,5 +1,14 @@
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import java.io.IOException;
 
 
 public class menuController {
@@ -12,6 +21,20 @@ public class menuController {
     public void about(ActionEvent e)
     {
 
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("About.fxml"));
+        AnchorPane pane = null;
+        try {
+            pane = fxmlLoader.load();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        Stage stg = new Stage();
+            stg.setTitle("About");
+            stg.setScene(new Scene(pane));
+            stg.setResizable(true);
+            stg.setAlwaysOnTop(true);
+            //stg.initModality(Modality.APPLICATION_MODAL);
+            stg.show();
     }
 
     public void home(ActionEvent e)
@@ -21,7 +44,8 @@ public class menuController {
 
     public void userInfo(ActionEvent e)
     {
-
+        idGetter.setID("1731536042");
+        showProfile.show();
     }
 
     public void messenger(ActionEvent e)
@@ -31,16 +55,20 @@ public class menuController {
 
     public void calculator(ActionEvent e)
     {
+        showCalculator.show();
 
     }
 
     public void note(ActionEvent e)
     {
-
+        showNote.show();
     }
+
+
 
     public void timer(ActionEvent e)
     {
+        showTime.show();
 
     }
 

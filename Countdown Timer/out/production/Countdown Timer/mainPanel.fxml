@@ -168,5 +168,6 @@
             </StackPane>
          </children>
       </GridPane>
+      <JFXButton onAction="#close" prefHeight="20.0" prefWidth="20.0" text="x" />
    </children>
 </AnchorPane>

@@ -3,6 +3,7 @@ import com.jfoenix.controls.JFXComboBox;
 import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -88,6 +89,11 @@ public class MainPanelController implements Initializable {
             }
         });
         thread.start();
+    }
+
+    public void close(ActionEvent e)
+    {
+        Platform.exit();
     }
 
     void setOutput(){

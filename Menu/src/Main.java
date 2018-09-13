@@ -16,11 +16,13 @@ public class Main extends Application {
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setTitle("Menu");
         primaryStage.setScene(scene);
+
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
         launch(args);
+
     }
 }

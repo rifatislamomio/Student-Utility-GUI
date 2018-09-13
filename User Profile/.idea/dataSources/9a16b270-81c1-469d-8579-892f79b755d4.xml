@@ -841,10 +841,19 @@
       <DataType>tinytext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="209" parent="201" name="PRIMARY">
+    <index id="209" parent="201" name="UserName">
+      <ColNames>UserName</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="210" parent="201" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
+    </key>
+    <key id="211" parent="201" name="UserName">
+      <ColNames>UserName</ColNames>
+      <UnderlyingIndexName>UserName</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

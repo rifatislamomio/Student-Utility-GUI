@@ -21,7 +21,7 @@
          </font>
       </JFXButton>
       <DatePicker fx:id="picker" layoutX="211.0" layoutY="39.0" />
-      <JFXTextArea fx:id="notes" focusColor="#ff000000" layoutX="23.0" layoutY="99.0" prefHeight="285.0" prefWidth="591.0" promptText="Start writing..." style=" -fx-border-color: #6b6b6b; -fx-border-radius: 4;" unFocusColor="#e3107200">
+      <JFXTextArea fx:id="notes" focusColor="#ff000000" layoutX="23.0" layoutY="99.0" prefHeight="285.0" prefWidth="591.0" promptText="Start writing..." style="-fx-border-color: #6b6b6b; -fx-border-radius: 4; -fx-background-color: #fff5bc;" unFocusColor="#e3107200">
          <font>
             <Font name="Gabriela Regular" size="16.0" />
          </font></JFXTextArea>

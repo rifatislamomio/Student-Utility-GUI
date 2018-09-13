@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="598.0" prefWidth="720.0" style="-fx-background-color: #f7fbd9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+    <AnchorPane layoutX="20.0" layoutY="22.0" minHeight="0.0" minWidth="0.0" prefHeight="555.0" prefWidth="270.0">
+         <children>
+            <Button fx:id="requestButton" layoutX="22.0" layoutY="47.0" mnemonicParsing="false" onAction="#requestButtonClick" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 8;" text="Requests" />
+            <Button fx:id="reloadButton" layoutX="146.0" layoutY="47.0" mnemonicParsing="false" onAction="#reloadButtonClicked" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 8;" text="RELOAD" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="147.0" text="Chat History">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="message" alignment="CENTER" layoutX="158.0" layoutY="147.0" mnemonicParsing="false" onAction="#messageButtonClick" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 8;" text="Message" />
+            <ListView fx:id="historyList" fixedCellSize="25.0" layoutX="-6.0" layoutY="201.0" onMouseClicked="#historyListSelected" prefHeight="327.0" prefWidth="282.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="chatMate" layoutX="319.0" layoutY="51.0" text="Select From History">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="507.0" layoutY="14.0" prefHeight="100.0" prefWidth="175.0">
+         <children>
+            <RadioButton fx:id="bad" layoutY="77.0" mnemonicParsing="false" text="BAD">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Review" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="good" layoutY="6.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="GOOD" toggleGroup="$Review" />
+            <RadioButton layoutY="42.0" mnemonicParsing="false" selected="true" text="NEUTRAL" toggleGroup="$Review" />
+            <Button fx:id="report" disable="true" layoutX="96.0" layoutY="37.0" mnemonicParsing="false" onAction="#reportButtonClicked" style="-fx-background-color: #dcdcdc; -fx-background-radius: 8;" text="Report" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="conversation" editable="false" layoutX="306.0" layoutY="125.0" prefHeight="302.0" prefWidth="393.0" promptText="Conversation to appear here..." style="-fx-background-color: #000000;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="myMessage" layoutX="306.0" layoutY="451.0" prefHeight="97.0" prefWidth="306.0" promptText="Write Your Message..." style="-fx-background-color: #000000;" />
+      <Button fx:id="sendButton" layoutX="627.0" layoutY="481.0" mnemonicParsing="false" onAction="#sendButtonClick" prefHeight="38.0" prefWidth="65.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 8;" text="Send" />
+   </children>
+</AnchorPane>
